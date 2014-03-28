@@ -1,6 +1,7 @@
 #!/bin/bash
 # Generate PhoneGap icon and splash screens.
 # Copyright 2013 Tom Vincent <http://tlvince.com/contact>
+# Additional Sizes added
 
 usage() { echo "usage: $0 icon colour [dest_dir]"; exit 1; }
 
@@ -68,3 +69,7 @@ $convert -resize 256x256 -extent 640x960 "$3/res/screen/ios/screen-iphone-portra
 $convert -resize 1024x1024 -extent 2008x1536 "$3/res/screen/ios/screen-ipad-landscape-2x.png"
 convert "$1" -resize 64x64 "$3/res/screen/webos/screen-64.png"
 $convert -resize 256x256 -extent 480x800 "$3/res/screen/windows-phone/screen-portrait.jpg"
+
+#iphone 5 sizes
+$convert -resize 256x256 -extent 1136x640 "$3/res/screen/ios/screen-iphone-landscape-568h-2x.png"
+$convert -resize 256x256 -extent 640x1136 "$3/res/screen/ios/screen-iphone-portrait-568h-2x.png"
