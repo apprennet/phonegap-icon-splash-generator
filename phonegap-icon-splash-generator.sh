@@ -37,8 +37,9 @@ $convert "$1" -resize 80x80 "$3/res/icon/ios/icon-80.png"
 $convert "$1" -resize 100x100 "$3/res/icon/ios/icon-100.png"
 $convert "$1" -resize 144x144 "$3/res/icon/ios/icon-144.png"
 $convert "$1" -resize 114x114 "$3/res/icon/ios/icon-114.png"
-$convert "$1" -resize 120x120 "$3/res/icon/ios/icon-120.png"
+$convert "$1" -resize 120x120 "$3/res/icon/ios/icon-small-40-3x.png"
 $convert "$1" -resize 152x152 "$3/res/icon/ios/icon-152.png"
+$convert "$1" -resize 180x180 "$3/res/icon/ios/icon-60-3x.png"
 $convert "$1" -resize 64x64 "$3/res/icon/webos/icon-64.png"
 $convert "$1" -resize 48x48 "$3/res/icon/windows-phone/icon-48.png"
 $convert "$1" -resize 173x173 "$3/res/icon/windows-phone/icon-173-tile.png"
@@ -73,3 +74,9 @@ $convert -resize 256x256 -extent 480x800 "$3/res/screen/windows-phone/screen-por
 #iphone 5 sizes
 $convert -resize 256x256 -extent 1136x640 "$3/res/screen/ios/screen-iphone-landscape-568h-2x.png"
 $convert -resize 256x256 -extent 640x1136 "$3/res/screen/ios/screen-iphone-portrait-568h-2x.png"
+
+#iphone 6 sizes
+$convert -resize 256x256 -extent 750x1334 "$3/res/screen/ios/screen-iphone-667h-2x.png"
+
+#iphone 6+
+$convert -resize 256x256 -extent 1242x2208 "$3/res/screen/ios/screen-iphone-736h-3x.png"
